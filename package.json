@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Pro MERN Stack 2",
   "main": "",
+  "type": "module",
   "scripts": {
-    "start": "nodemon -w server server/server.js",
+    "start": "nodemon -w server --experimental-modules server/server.js",
     "compile": "babel src --out-dir public",
     "watch": "babel src --out-dir public --watch --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"

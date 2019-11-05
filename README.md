@@ -5,7 +5,7 @@ Pro MERN Stack 2
 
 | Tool | Version |
 | ---- | ------- |
-| node | `12.3.0` |
+| node | `12.13.0` |
 | npm | `6.12.0` |
 | yarn | `1.19.1` |
 | react | `16.11.0` |

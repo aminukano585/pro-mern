@@ -17,3 +17,5 @@ Pro MERN Stack 2
 | @babel/preset-env | `7.6.3` |
 | @babel/polyfill | `7.6.0` |
 | nodemon | `1.19.4` |
+| graphql | `14.5.8` |
+| apollo-server-express | `2.9.7` |

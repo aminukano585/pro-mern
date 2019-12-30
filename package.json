@@ -5,7 +5,7 @@
   "main": "",
   "type": "module",
   "scripts": {
-    "start": "nodemon -w server --experimental-modules server/server.js",
+    "start": "nodemon -w server -e js,graphql --experimental-modules server/server.js",
     "compile": "babel src --out-dir public",
     "watch": "babel src --out-dir public --watch --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"

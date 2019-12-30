@@ -1,3 +1,4 @@
+import fs from 'fs';
 import express from 'express';
 import apollo from 'apollo-server-express';
 const { ApolloServer } = apollo;
@@ -11,15 +12,6 @@ function setAboutMessage(_, { message }) {
   return aboutMessage = message;
 }
 
-const typeDefs = `
-  type Query {
-    about: String!
-  }
-  type Mutation {
-    setAboutMessage(message: String!): String
-  }
-`;
-
 const resolvers = {
   Query: {
     about: () => aboutMessage,
@@ -30,7 +22,7 @@ const resolvers = {
 }
 
 const server = new ApolloServer({
-  typeDefs,
+  typeDefs: fs.readFileSync('./server/schema.graphql', 'utf-8'),
   resolvers,
 });
 

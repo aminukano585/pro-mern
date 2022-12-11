@@ -25,7 +25,7 @@
   "homepage": "https://github.com/aminukano585/pro-mern#readme",
   "dependencies": {
     "apollo-server-express": "^2.9.7",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "graphql": "^14.5.8"
   },
   "devDependencies": {
